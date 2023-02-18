@@ -45,4 +45,4 @@ Contributions to Career Roadmaps are welcome and encouraged! To contribute, foll
 Career Roadmaps is licensed under Team_AMPTY. See LICENSE.md for more information.
 # Contact
 
-If you have any questions or feedback, please contact us at team_ampty@gmail.com.
+If you have any questions or feedback, please contact us at teamAMPTY@gmail.com.
