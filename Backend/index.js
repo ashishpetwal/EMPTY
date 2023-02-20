@@ -1,17 +1,19 @@
 const express= require ('express')
 const mongoose = require('mongoose')
+const connectDatabase = require('./DB');
+const cors = require('cors');
 
-const url = "mongodb+srv://TeamAMPTY:team_ampty@cluster0.pcpgnho.mongodb.net/?retryWrites=true&w=majority"
+connectDatabase();
 
-mongoose.connect(url).then(()=>{
-    console.log("Connection Successful")
-}).catch((err)=>{
-    console.log(err);
-})
 
-const app= express()
+const app = express();
+const port = 5000;
 
-const port= 5000
+app.use(express.json());
+app.use(cors());
+
+app.use('/api/auth', require('./Routes/auth'));
+
 app.get('/',(req,res)=>{
     res.send('hello world')
 })
